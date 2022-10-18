@@ -26,19 +26,7 @@
                     <img src="{{product.image.url}}" alt="{{product.name}}">
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <div>
-                    <h1 class="my_prod_title">{{product.name}}</h1>
-                    <p>${{product.price}}</p>
-                    <p class="my_title">Product Description</p>
-                    <p class="text-justify my_prod_text">{{product.description}}</p>
-                    {% if product.stock <= 0 %}
-                        <p class="text-justify my_prod_text"><b>Out of stock</b></p>
-                    {% else %}
-                        <a class="btn btn-secondary" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
-                    {% endif %}
-                 </div>
-             </div>
+            
          </div>
     </div>
 </div>
